@@ -15,10 +15,6 @@ products: Product[];
     this.listProducts();
   }
 listProducts(){
-  this.productService.getProductList().subscribe(
-    data => {
-      this.products = data;
-    }
-  )
+  this.productService.getProductList();
 }
 }

@@ -12,10 +12,9 @@ export class ProductService {
  
   constructor(private httpClient: HttpClient) {}
 
-getProductList(): Observable<Product[]>{
-  return this.httpClient.get<GetResponse>(this.baseUrl).pipe(
-    map(response => response.products)
-  );
+getProductList(): Observable<Object>{
+  return this.httpClient.get(this.baseUrl);
+  
 }
    
 
