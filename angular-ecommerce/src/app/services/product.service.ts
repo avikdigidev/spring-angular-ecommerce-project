@@ -14,7 +14,6 @@ export class ProductService {
 
 getProductList(): Observable<Object>{
   return this.httpClient.get(this.baseUrl);
-  
 }
    
 
